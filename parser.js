@@ -2,8 +2,8 @@ const puppeteer = require("puppeteer");
 const url = process.argv[2];
 (async () => {
   const browser = await puppeteer.launch({
-    headless: false,
-    args: ["--no-sandbox", "--headless"],
+    headless: true,
+    args: ["--no-sandbox"],
   });
   const USER_AGENT =
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36";
